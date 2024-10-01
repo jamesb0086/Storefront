@@ -73,6 +73,10 @@ a:active {
   border-style: groove;
 }
 
+.nav {
+    grid-area: nav;
+}
+
 .sidebar {
   border-style: groove;
 }
@@ -85,14 +89,14 @@ footer {
 }
 
 .container{
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 10px;
-  display: grid;
-  grid-template-columns: 1fr 5fr 2fr;
-  grid-template-areas:
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-areas:
         "header header header"
-        "main main sidebar"
+        "nav main sidebar"
         "footer footer footer";
-  grid-gap: 50px;
+    grid-gap: 50px;
 }
