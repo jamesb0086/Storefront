@@ -26,7 +26,7 @@ h1 {
 
 nav ul {
     margin: 0;
-    padding: 0;
+    padding-bottom: 100px;
     list-style-type: none;
     display: block;
     width: 200px;
@@ -53,15 +53,11 @@ a {
     text-decoration: none;
 }
 
-/*a:link {
-  color: #CAFAA;
-}*/
-
 a:visited {
     color: #10570E;
 }
 
-a:focus, a:hover {
+a:focus, a:hover, .current {
     color: #c700f2;
     background-color: #fff;
 }
