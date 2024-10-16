@@ -100,3 +100,33 @@ footer {
         "footer footer";
     grid-gap: 10px;
 }
+
+.input-group.success input {
+    border-color: #09c372;
+}
+
+.input-group.error input {
+    border-color: #ff3860;
+}
+
+.input-group .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+/* Success message styling */
+#thank-you-message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 18px;
+    display: none;
+}
+
+#thank-you-message {
+    font-weight: bold;
+}
