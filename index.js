@@ -4,17 +4,31 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 const thankYouMessage = document.getElementById('thank-you-message');
+const jsonOutput = document.getElementById('json-output');
+const jsonData = document.getElementById('json-data');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
 
     if (validateInputs()) {
-        // Clear the form and reset any error/success messages
-        form.reset();  // Reset the form fields
-        clearValidation(); // Clear all validation messages and styles
+        // Create the JSON object after successful validation
+        const formData = {
+            username: username.value.trim(),
+            email: email.value.trim(),
+            password: password.value.trim(),
+            confirmPassword: password2.value.trim()
+        };
 
         // Display the "Thank you" message
         thankYouMessage.style.display = 'block';
+
+        // Display the JSON object below the form
+        jsonOutput.style.display = 'block';
+        jsonData.textContent = JSON.stringify(formData, null, 2); // Pretty-print JSON
+
+        // Clear the form and reset any error/success messages
+        form.reset();  // Reset the form fields
+        clearValidation(); // Clear all validation messages and styles
     }
 });
 
