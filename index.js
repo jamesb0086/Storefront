@@ -19,7 +19,7 @@ form.addEventListener('submit', e => {
             confirmPassword: password2.value.trim()
         };
 
-        // Display the "Thank you" message
+        // Display thank you message
         thankYouMessage.style.display = 'block';
 
         // Display the JSON object below the form
